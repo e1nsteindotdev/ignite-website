@@ -102,7 +102,7 @@ export function FormThree() {
     },
   });
 
-  const { getLabel, getPlaceholder } = getFieldUtils(lang);
+  const { next, step, getLabel, getPlaceholder } = getFieldUtils(lang);
 
   if (submssion === "success") {
     return (
@@ -139,7 +139,7 @@ export function FormThree() {
     <div>
       <div className="flex justify-start gap-2 lg:mb-10">
         <p className="text-[24px] lg:text-[65px] text-primary font-display">
-          Etape
+          {step}
         </p>
         <p className="text-[14px] lg:text-[35px] text-primary">3/3</p>
       </div>
@@ -346,7 +346,7 @@ export function FormThree() {
                   type="submit"
                   disabled={!canSubmit}
                 >
-                  {loading ? "Sending..." : <><p>Next Step</p> <Arrow /></>}
+                  {loading ? "Sending..." : <><p>{next}</p> <Arrow /></>}
 
                 </button>
               )}

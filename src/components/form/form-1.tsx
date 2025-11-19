@@ -114,13 +114,13 @@ export function FormOne() {
     },
   });
 
-  const { getLabel, getPlaceholder } = getFieldUtils(lang);
+  const { step, next, getLabel, getPlaceholder } = getFieldUtils(lang);
 
   return (
     <div className="">
       <div className="flex justify-start gap-2 w-full mb-5 lg:mb-10">
         <p className="text-[24px] lg:text-[65px] text-primary font-display">
-          Etape
+          {step}
         </p>
         <p className="text-[14px] lg:text-[35px] text-primary">1/3</p>
       </div>
@@ -482,7 +482,7 @@ export function FormOne() {
                   type="submit"
                   disabled={!canSubmit}
                 >
-                  {isSubmitting ? "..." : "Next Step"}
+                  {isSubmitting ? "..." : { next }}
                   <Arrow />
                 </button>
               )}

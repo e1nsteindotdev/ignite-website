@@ -74,7 +74,7 @@ export function FormTwo() {
     },
   });
 
-  const { getLabel, getPlaceholder } = getFieldUtils(lang);
+  const { next, step getLabel, getPlaceholder } = getFieldUtils(lang);
 
   useEffect(() => {
     form.validateAllFields("submit");
@@ -84,7 +84,7 @@ export function FormTwo() {
     <div className="flex flex-col justify-center">
       <div className="flex justify-start gap-2 mb-5 lg:mb-10">
         <p className="text-[24px] lg:text-[65px] text-primary font-display">
-          Etape
+          {step}
         </p>
         <p className="text-[14px] lg:text-[35px] text-primary">2/3</p>
       </div>
@@ -433,7 +433,7 @@ export function FormTwo() {
                   type="submit"
                   disabled={!canSubmit}
                 >
-                  {isSubmitting ? "..." : "Next Step"}
+                  {isSubmitting ? "..." : next}
                   <Arrow />
                 </button>
               )}
