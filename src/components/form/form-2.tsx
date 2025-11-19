@@ -98,7 +98,7 @@ export function FormTwo() {
         className="flex justify-center  lg:justify-start lg:w-[850px]"
       >
         <div className="h-full flex flex-col justify-between">
-          <div className="flex flex-col items-start lg:items-start gap-x-20  gap-y-3 lg:gap-y-4 lg:h-[820px] lg:w-[850px] ">
+          <div className="flex flex-col items-start lg:items-start gap-x-20  gap-y-3 lg:gap-y-4 lg:h-[920px] lg:w-[850px] ">
             <form.Field
               name="knowledge_about_ignite"
               validators={{
@@ -417,7 +417,7 @@ export function FormTwo() {
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 mt-10">
             <button
               className="text-[14px] lg:text-[16px] px-4 py-2.75 lg:px-10 lg:py-3 rounded-xl lg:rounded-2xl text-bold bg-primary/5 border-primary/30 border flex gap-4 items-center text-primary font-bold uppercase"
-              onClick={() => setStep(0)}
+              onClick={() => setStep(1)}
             >
               Go Back
               <div className="rotate-180">

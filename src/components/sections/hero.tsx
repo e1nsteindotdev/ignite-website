@@ -28,14 +28,14 @@ export function HeroSection() {
 
 
         <div className="w-full flex justify-between lg:hidden uppercase">
-          <p className="text-[12px] font-bold">Got an idea <br /> worth sharing </p>
-          <p className="text-[12px] font-bold">Claim your <br /> five minutes</p>
+          <p className="text-[12px] font-bold uppercase">Got an idea <br /> worth sharing </p>
+          <p className="text-[12px] font-bold uppercase">Claim your <br /> five minutes</p>
         </div>
 
         <div className="w-full flex justify-center lg:justify-between lg:pt-40">
-          <p className="text-[20px] font-bold hidden lg:inline">Got an idea <br /> worth sharing </p>
+          <p className="text-[20px] font-bold hidden lg:inline uppercase">Got an idea <br /> worth sharing </p>
           <Button size="lg">REGISTER TO SPEAK AT IGNITE</Button>
-          <p className="text-[20px] font-bold hidden lg:inline">Claim your <br /> five minutes</p>
+          <p className="text-[20px] font-bold hidden lg:inline uppercase">Claim your <br /> five minutes</p>
         </div>
 
         <div className="w-full flex flex-col lg:flex-row justify-center gap-[87px] lg:gap-0 lg:justify-between items:center lg:items-end">

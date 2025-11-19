@@ -153,7 +153,7 @@ export function FormThree() {
         className="flex justify-center"
       >
         <div>
-          <div className="flex flex-col gap-x-20 gap-y-4 w-[320px] lg:h-[820px] lg:w-[850px]">
+          <div className="flex flex-col gap-x-20 gap-y-4 w-[320px] lg:h-[820px] lg:w-[850px] px-3">
             <form.Field
               name="duo_talk_preference"
               validators={{
@@ -347,7 +347,6 @@ export function FormThree() {
                   disabled={!canSubmit}
                 >
                   {loading ? "Sending..." : <><p>{next}</p> <Arrow /></>}
-
                 </button>
               )}
             />
