@@ -49,8 +49,8 @@ export function PreviousEditionsSection() {
               <img src="/images/edition-2023.webp" className="absolute object-cover h-full w-full top-0 right-0 -z-10" />
 
               <div className="text-[17px] lg:text-[44px]">
-                <p className="font-display">First Edition</p>
-                <p className="font-display">2023</p>
+                <p className="font-display">Second Edition</p>
+                <p className="font-display">2024</p>
               </div>
 
               <div className="flex flex-col gap-1 text-[14px] lg:text-[32px]">
