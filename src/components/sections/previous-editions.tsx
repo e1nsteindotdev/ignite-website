@@ -15,7 +15,7 @@ export function PreviousEditionsSection() {
 
         {/* content   */}
         <div className="w-full flex flex-col justify-center gap-5 mt-10 lg:mt-16">
-          <p className="font-display text-[41px] leading-[1.2] lg:leading-none lg:text-[64px] uppercase text-center">pervious editions</p>
+          <p className="font-display text-[41px] leading-[1.2] lg:leading-none lg:text-[64px] uppercase text-center">previous editions</p>
 
           <div className="w-full flex flex-col lg:flex-row border border-[#FF6F00] lg:mt-4">
             {/* first one  */}
@@ -54,8 +54,8 @@ export function PreviousEditionsSection() {
               </div>
 
               <div className="flex flex-col gap-1 text-[14px] lg:text-[32px]">
-                <p><span className="font-bold">700</span><span>Attendees</span></p>
-                <p><span className="font-bold">13</span><span>Speakers</span></p>
+                <p><span className="font-bold">700</span><span> Attendees</span></p>
+                <p><span className="font-bold">13</span><span> Speakers</span></p>
               </div>
 
               <div className="space-y-4">
