@@ -133,6 +133,40 @@ export function FormThree() {
         </div>
       </div>
     );
+  } else if (submssion === 'failure') {
+
+    return (
+      <div className="flex flex-col items-center justify-center gap-4 lg:gap-6">
+        <div className="flex justify-center gap-2 mb-5 lg:mb-10">
+          <p className="text-[24px] lg:text-[65px] text-red-600 font-display">
+            Failed
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center text-center space-y-4">
+          <img
+            className="h-30"
+            src="/images/error.svg"
+          />
+          <h2 className="text-[20px] lg:text-[40px] font-bold text-red-600">
+            {lang === "AR"
+              ? "فشل في إرسال الطلب"
+              : lang === "FR"
+                ? "Échec de l’envoi de la demande"
+                : "Failed to submit your request"}
+          </h2>
+
+          <p className="text-[14px] lg:text-[20px] text-red-600/80">
+            {lang === "AR"
+              ? "حدث خطأ أثناء معالجة طلبك. يرجى المحاولة مرة أخرى."
+              : lang === "FR"
+                ? "Une erreur est survenue lors du traitement. Veuillez réessayer."
+                : "An error occurred while processing your request. Please try again."}
+          </p>
+        </div>
+      </div>
+    );
+
   }
 
   return (

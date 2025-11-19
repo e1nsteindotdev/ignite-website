@@ -482,7 +482,7 @@ export function FormOne() {
                   type="submit"
                   disabled={!canSubmit}
                 >
-                  {isSubmitting ? "..." : { next }}
+                  {isSubmitting ? "..." : next}
                   <Arrow />
                 </button>
               )}

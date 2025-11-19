@@ -13,7 +13,7 @@ export function SpeakersRegistration() {
   if (!lang) setStep(0);
   //if (step !== 1) setStep(1)
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen" id={"speakers-registration"}>
       <img
         src="/images/noisy-red-mobile.webp"
         className="absolute lg:hidden h-full object-cover  top-0 left-0 -z-10"

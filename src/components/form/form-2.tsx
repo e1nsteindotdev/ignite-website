@@ -74,7 +74,7 @@ export function FormTwo() {
     },
   });
 
-  const { next, step getLabel, getPlaceholder } = getFieldUtils(lang);
+  const { next, step, getLabel, getPlaceholder } = getFieldUtils(lang);
 
   useEffect(() => {
     form.validateAllFields("submit");
